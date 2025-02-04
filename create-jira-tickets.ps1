@@ -67,8 +67,8 @@ foreach ($i in $solutions)
             }
             # creating np tickets
             # NOTES:
-            #       - https://jira.14west.us/rest/api/2/issuetype
-            #       - https://jira-uat.14west.us/rest/api/2/issue/createmeta
+            #       - https://jira.<domain>/rest/api/2/issuetype
+            #       - https://jira-uat.<domain>/rest/api/2/issue/createmeta
             [string]$body = 
             @{
              fields = @{
