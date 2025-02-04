@@ -7,13 +7,14 @@ $File = Import-LocalizedData -BaseDirectory $cd -FileName solutions.psd1
 # user defined variables - CHANGE BEFORE RUNNING SCRIPT!!!
 [string]$username = ""
 [string]$password = ""
-[string]$target = 'https://jira-uat.14west.us'
-#[string]$target = 'https://jira.14west.us'
-[string]$projectkey = 'ITSYS'
+# jira url (ex. https://jira3.cerner.com
+[string]$target = ''
+# set project key (ex. 'ITSYS'
+[string]$projectkey = ''
 # CONFIGURE TO THE CURRENT MONTH - Ex. "Apr 2020", Ex. "Jul 2020"
 [string]$date = 'Jun 2020'
-#[string]$epic = 'ITSYS-1044'
-[string]$epic = 'INFOSEC-2133'
+# epic name (ex. 'INFOSEC-2133'
+[string]$epic = ''
 
 # grabbing solution keys from .psd1 file
 $solutions = $File.Solutions.Keys
